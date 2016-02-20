@@ -1,0 +1,47 @@
+form
+  .card-deck-wrapper
+    .card-deck
+      .card.card-block.card-primary-outline.text-xs-center
+        / = link_to "Select primary color", root_url, class: "btn btn-primary btn-lg btn-block"
+        .form-group
+          input type="text" value="" class="form-control"
+      .card.card-block.card-secondary-outline.text-xs-center
+        = link_to "Select secondary color", root_url, class: "btn btn-secondary btn-lg btn-block"
+      .card.card-block.card-neutral-outline.text-xs-center
+        = link_to "Select neutral color", root_url, class: "btn btn-neutral btn-lg btn-block"
+
+
+/ form
+/   .form-group.row
+/     label.col-sm-2.form-control-label for="inputEmail3"  Email
+/     .col-sm-10
+/       input#inputEmail3.form-control placeholder="Email" type="email" /
+/   .form-group.row
+/     label.col-sm-2.form-control-label for="inputPassword3"  Password
+/     .col-sm-10
+/       input#inputPassword3.form-control placeholder="Password" type="password" /
+/   .form-group.row
+/     label.col-sm-2 Radios
+/     .col-sm-10
+/       .radio
+/         label
+/           input#gridRadios1 checked="" name="gridRadios" type="radio" value="option1" /
+/           | Option one is this and that&mdash;be sure to include why it's great
+/       .radio
+/         label
+/           input#gridRadios2 name="gridRadios" type="radio" value="option2" /
+/           | Option two can be something else and selecting it will deselect option one
+/       .radio.disabled
+/         label
+/           input#gridRadios3 disabled="" name="gridRadios" type="radio" value="option3" /
+/           | Option three is disabled
+/   .form-group.row
+/     label.col-sm-2 Checkbox
+/     .col-sm-10
+/       .checkbox
+/         label
+/           input type="checkbox" /
+/           | Check me out
+/   .form-group.row
+/     .col-sm-offset-2.col-sm-10
+/       button.btn.btn-secondary type="submit"  Sign in

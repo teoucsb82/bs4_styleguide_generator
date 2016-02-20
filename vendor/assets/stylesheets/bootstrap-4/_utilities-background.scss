@@ -15,6 +15,10 @@
 
 @include bg-variant('.bg-primary', $brand-primary);
 
+@include bg-variant('.bg-secondary', $brand-secondary);
+
+@include bg-variant('.bg-neutral', $brand-neutral);
+
 @include bg-variant('.bg-success', $brand-success);
 
 @include bg-variant('.bg-info', $brand-info);

@@ -62,6 +62,9 @@ fieldset[disabled] a.btn {
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
 }
+.btn-neutral {
+  @include button-variant($btn-neutral-color, $btn-neutral-bg, $btn-neutral-border);
+}
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 }
@@ -81,6 +84,9 @@ fieldset[disabled] a.btn {
 }
 .btn-secondary-outline {
   @include button-outline-variant($btn-secondary-border);
+}
+.btn-neutral-outline {
+  @include button-outline-variant($btn-neutral-border);
 }
 .btn-info-outline {
   @include button-outline-variant($btn-info-bg);

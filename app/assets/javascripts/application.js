@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require tether/tether
 //= require bootstrap-4/bootstrap
+//= require bootstrap-colorpicker/bootstrap-colorpicker
 //= require_tree .

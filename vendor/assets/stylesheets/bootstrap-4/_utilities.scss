@@ -86,6 +86,10 @@
 
 @include text-emphasis-variant('.text-primary', $brand-primary);
 
+@include text-emphasis-variant('.text-secondary', $brand-secondary);
+
+@include text-emphasis-variant('.text-neutral', $brand-neutral);
+
 @include text-emphasis-variant('.text-success', $brand-success);
 
 @include text-emphasis-variant('.text-info', $brand-info);

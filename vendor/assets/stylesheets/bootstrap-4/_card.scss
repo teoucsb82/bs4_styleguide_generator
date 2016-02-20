@@ -95,6 +95,12 @@
 .card-primary {
   @include card-variant($brand-primary, $brand-primary);
 }
+.card-secondary {
+  @include card-variant($brand-secondary, $brand-secondary);
+}
+.card-neutral {
+  @include card-variant($brand-neutral, $brand-neutral);
+}
 .card-success {
   @include card-variant($brand-success, $brand-success);
 }
@@ -114,6 +120,9 @@
 }
 .card-secondary-outline {
   @include card-outline-variant($btn-secondary-border);
+}
+.card-neutral-outline {
+  @include card-outline-variant($btn-neutral-border);
 }
 .card-info-outline {
   @include card-outline-variant($btn-info-bg);

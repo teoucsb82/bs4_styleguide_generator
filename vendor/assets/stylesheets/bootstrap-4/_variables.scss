@@ -32,7 +32,9 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #DD4814 !default;
+$brand-secondary:           #772953 !default;
+$brand-neutral:             #AEA79F !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -44,7 +46,7 @@ $brand-danger:              #d9534f !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-flex:               false !default;
-$enable-rounded:            true !default;
+$enable-rounded:            false !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
@@ -85,8 +87,8 @@ $border-width:               1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    #fff !default;
-$body-color:                 $gray-dark !default;
+$body-bg:                    $gray-lightest !default;
+$body-color:                 #000 !default;
 
 
 // Links
@@ -247,9 +249,13 @@ $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
-$btn-secondary-color:            $gray-dark !default;
-$btn-secondary-bg:               #fff !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               $brand-secondary !default;
+$btn-secondary-border:           $btn-secondary-bg !default;
+
+$btn-neutral-color:              #fff !default;
+$btn-neutral-bg:                 $brand-neutral !default;
+$btn-neutral-border:             $btn-neutral-bg !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
@@ -518,6 +524,8 @@ $popover-arrow-outer-color:           fade-in($popover-border-color, 0.05) !defa
 
 $label-default-bg:            $gray-light !default;
 $label-primary-bg:            $brand-primary !default;
+$label-secondary-bg:          $brand-secondary !default;
+$label-neutral-bg:            $brand-neutral !default;
 $label-success-bg:            $brand-success !default;
 $label-info-bg:               $brand-info !default;
 $label-warning-bg:            $brand-warning !default;
@@ -582,6 +590,8 @@ $progress-bar-color:          #fff !default;
 $progress-border-radius:      $border-radius !default;
 
 $progress-bar-bg:             $brand-primary !default;
+$progress-bar-secondary-bg:   $brand-secondary !default;
+$progress-bar-neutral-bg:     $brand-neutral !default;
 $progress-bar-success-bg:     $brand-success !default;
 $progress-bar-warning-bg:     $brand-warning !default;
 $progress-bar-danger-bg:      $brand-danger !default;
