@@ -1,0 +1,36 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+$colors: (
+  primary: $brand-primary,
+  secondary: $brand-secondary,
+  neutral: $brand-neutral,
+);
+
+@each $name, $color in $colors {
+  @for $i from 5 through 10 {
+  .bg-#{$name}-#{$i * 10} {
+      background-color: tint($color, (10 - $i) * 5);
+    }
+  }
+  @for $i from 2 through 9 {
+  .bg-#{$name}-#{$i * 5} {
+      background-color: tint($color, (15 - $i) * 5);
+    }
+  }
+}

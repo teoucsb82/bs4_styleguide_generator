@@ -60,6 +60,14 @@ a.label {
   @include label-variant($label-primary-bg);
 }
 
+.label-secondary {
+  @include label-variant($label-secondary-bg);
+}
+
+.label-neutral {
+  @include label-variant($label-neutral-bg);
+}
+
 .label-success {
   @include label-variant($label-success-bg);
 }

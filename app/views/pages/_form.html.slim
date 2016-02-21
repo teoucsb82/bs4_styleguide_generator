@@ -1,14 +1,20 @@
-form
-  .card-deck-wrapper
-    .card-deck
-      .card.card-block.card-primary-outline.text-xs-center
-        / = link_to "Select primary color", root_url, class: "btn btn-primary btn-lg btn-block"
-        .form-group
-          input type="text" value="" class="form-control"
-      .card.card-block.card-secondary-outline.text-xs-center
-        = link_to "Select secondary color", root_url, class: "btn btn-secondary btn-lg btn-block"
-      .card.card-block.card-neutral-outline.text-xs-center
-        = link_to "Select neutral color", root_url, class: "btn btn-neutral btn-lg btn-block"
+form#colorpicker
+  .row
+    .col-sm-4
+      .form-group
+        = link_to "Select primary color", nil, class: "btn btn-primary btn-lg btn-block", remote: true
+        input type="text" name="primary" value="" class="form-control"
+    .col-sm-4
+      .form-group
+        = link_to "Select secondary color", nil, class: "btn btn-secondary btn-lg btn-block", remote: true
+        input type="text" name="secondary" value="" class="form-control"
+    .col-sm-4
+      .form-group
+        = link_to "Select neutral color", nil, class: "btn btn-neutral btn-lg btn-block", remote: true
+        input type="text" name="neutral" value="" class="form-control"
+  .row
+    .col-sm-12
+      h1 hi
 
 
 / form

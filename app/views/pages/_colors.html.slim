@@ -1,0 +1,18 @@
+.card-block
+  h2#colors.card-title Colors
+  h3.card-subtitle.text-muted Tints
+.card-block
+  .card-deck-wrapper
+    .card-deck
+      - %w(primary secondary neutral).each do |t|
+        .card
+          .card-block class="bg-#{t}" #{t.capitalize} Color Tints
+          ul.list-group.list-group-flush
+            - (50..100).step(10).to_a.reverse.each do |x|
+              li.list-group-item class="bg-#{t}-#{x}"
+                span.small.pull-xs-right .bg-#{t}-#{x}
+                = x
+            - (10..45).step(5).to_a.reverse.each do |x|
+              li.list-group-item class="bg-#{t}-#{x}"
+                span.small.pull-xs-right .bg-#{t}-#{x}
+                = x
