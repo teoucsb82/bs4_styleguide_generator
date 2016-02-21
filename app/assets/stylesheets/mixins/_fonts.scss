@@ -1,0 +1,15 @@
+// Google Fonts
+// Sans-Serif
+
+$sansSerifFonts: "Arimo", "Cabin", "Dosis", "Hind", "Lato", "Nunito", "Oswald", "Oxygen", "Play", "Raleway", "Roboto", "Signika", "Ubuntu";
+$fonts: $sansSerifFonts;
+
+@each $fontFamily in $fonts {
+  @each $name in $fontFamily {
+    @import url(http://fonts.googleapis.com/css?family=#{$name}:400italic,700italic,400,700);
+  }
+}
+
+// // Serif
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+

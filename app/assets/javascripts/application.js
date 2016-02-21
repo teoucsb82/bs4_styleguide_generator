@@ -16,4 +16,3 @@
 //= require bootstrap-4/bootstrap
 //= require bootstrap-colorpicker/bootstrap-colorpicker
 //= require_tree ./widgets
-//= require_tree .
