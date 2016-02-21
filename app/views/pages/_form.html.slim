@@ -1,20 +1,34 @@
 form#colorpicker
   .row
-    .col-sm-4
-      .form-group
-        = link_to "Select primary color", nil, class: "btn btn-primary btn-lg btn-block", remote: true
-        input type="text" name="primary" value="" class="form-control"
-    .col-sm-4
-      .form-group
-        = link_to "Select secondary color", nil, class: "btn btn-secondary btn-lg btn-block", remote: true
-        input type="text" name="secondary" value="" class="form-control"
-    .col-sm-4
-      .form-group
-        = link_to "Select neutral color", nil, class: "btn btn-neutral btn-lg btn-block", remote: true
-        input type="text" name="neutral" value="" class="form-control"
+    .col-md-6
+      .card
+        .card-block
+          h4.card-title Header Font
+          ul.nav.nav-pills#header-font
+            - ALL_FONTS.each do |font|
+              li.nav-item 
+                = link_to font, nil, class: "font-#{font.downcase} nav-link #{'active' if font=="Bitter"}", data: { toggle: "tab" }
+    .col-md-6
+      .card
+        .card-block
+          h4.card-title Body Font
+          ul.nav.nav-pills#body-font
+            - ALL_FONTS.each do |font|
+              li.nav-item 
+                = link_to font, nil, class: "font-#{font.downcase} nav-link #{'active' if font=="Raleway"}", data: { toggle: "tab" }
   .row
-    .col-sm-12
-      h1 hi
+    .col-md-4
+      .form-group
+        = link_to "Select primary color", nil, class: "btn btn-primary btn-block", remote: true
+        input type="text" name="primary" value="" class="form-control"
+    .col-md-4
+      .form-group
+        = link_to "Select secondary color", nil, class: "btn btn-secondary btn-block", remote: true
+        input type="text" name="secondary" value="" class="form-control"
+    .col-md-4
+      .form-group
+        = link_to "Select neutral color", nil, class: "btn btn-neutral btn-block", remote: true
+        input type="text" name="neutral" value="" class="form-control"
 
 
 / form

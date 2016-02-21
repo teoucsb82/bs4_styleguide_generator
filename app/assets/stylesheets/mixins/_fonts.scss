@@ -1,15 +1,50 @@
 // Google Fonts
 // Sans-Serif
 
-$sansSerifFonts: "Arimo", "Cabin", "Dosis", "Hind", "Lato", "Nunito", "Oswald", "Oxygen", "Play", "Raleway", "Roboto", "Signika", "Ubuntu";
-$fonts: $sansSerifFonts;
+$sansSerifFonts: 
+  "Arimo",
+  "Cabin",
+  "Dosis",
+  "Exo",
+  "Hind",
+  "Lato",
+  "Nobile",
+  "Nunito",
+  "Oswald",
+  "Oxygen",
+  "Play",
+  "Raleway",
+  "Roboto",
+  "Signika",
+  "Ubuntu";
+$serifFonts: 
+  "Arvo", 
+  "Bitter", 
+  "Brawler", 
+  "Cardo", 
+  "Copse", 
+  "Coustard", 
+  "Kreon", 
+  "Merriweather", 
+  "Rokkitt", 
+  "Tinos";
+$displayFonts:
+  "Lobster",
+  "Pacifico",
+  "Righteous",
+  "Chewy",
+  "Satisfy",
+  "Cookie",
+  "Handlee",
+  "Bevan",
+  "Audiowide";
+$fonts: $sansSerifFonts, $serifFonts, $displayFonts;
 
 @each $fontFamily in $fonts {
   @each $name in $fontFamily {
     @import url(http://fonts.googleapis.com/css?family=#{$name}:400italic,700italic,400,700);
+    .font-#{to-lower-case($name)} {
+      font-family: $name !important;
+    }
   }
 }
-
-// // Serif
-// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-
