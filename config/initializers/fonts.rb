@@ -2,11 +2,13 @@ FONTS_SANS_SERIF = %w(
     Arimo
     Cabin
     Dosis
+    Droid\ Sans
     Exo
     Hind
     Lato
     Nobile
     Nunito
+    Open\ Sans
     Oswald
     Oxygen
     Play
@@ -23,6 +25,7 @@ FONTS_SERIF = %w(
     Cardo
     Copse
     Coustard
+    Droid\ Serif
     Kreon
     Merriweather
     Rokkitt

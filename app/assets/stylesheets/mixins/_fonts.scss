@@ -5,11 +5,13 @@ $sansSerifFonts:
   "Arimo",
   "Cabin",
   "Dosis",
+  "Droid Sans",
   "Exo",
   "Hind",
   "Lato",
   "Nobile",
   "Nunito",
+  "Open Sans",
   "Oswald",
   "Oxygen",
   "Play",
@@ -24,6 +26,7 @@ $serifFonts:
   "Cardo", 
   "Copse", 
   "Coustard", 
+  "Droid Serif",
   "Kreon", 
   "Merriweather", 
   "Rokkitt", 
@@ -40,11 +43,19 @@ $displayFonts:
   "Audiowide";
 $fonts: $sansSerifFonts, $serifFonts, $displayFonts;
 
+$str: to-string($fonts);
+$str: str-replace($str, '", "', '|');
+$str: str-replace($str, 'to-string("', '');
+$str: str-replace($str, '")', '');
+$str: str-replace($str, ' ', '+');
+
+@import url(//fonts.googleapis.com/css?family=#{$str}:400italic,700italic,400,700);
+
 @each $fontFamily in $fonts {
   @each $name in $fontFamily {
-    @import url(//fonts.googleapis.com/css?family=#{$name}:400italic,700italic,400,700);
-    .font-#{to-lower-case($name)} {
+    .font-#{to-lower-case(str-replace($name, " ", "-"))} {
       font-family: $name !important;
     }
   }
 }
+
